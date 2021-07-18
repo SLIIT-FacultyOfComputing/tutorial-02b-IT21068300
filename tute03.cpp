@@ -20,5 +20,6 @@ int main()
     }
 
     cout<<"Factorial of "<<no<<" is "<<fac;  
+    
     return 0;
 }
