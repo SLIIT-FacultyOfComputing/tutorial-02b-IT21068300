@@ -25,6 +25,7 @@ int main()
    cout<<"Enter OtHrs : ";
    cin>>otHrs; 
    
+   
    switch (etype) {
       case 1 :
           otRate = 1000;
