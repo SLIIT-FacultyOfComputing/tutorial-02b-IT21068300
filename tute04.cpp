@@ -37,10 +37,26 @@ long Factorial(int no)
 }
 long nCr(int n, int r)
 {
-  int fac=1;
-  for (int r=n; r >= 1; r--) {
-        fac = fac * r;
+  int fac1=1;
+  int fac2=1;
+  int fac3=1;
+  int NCR;
+  int x,y,z;
+  for (int x=n; x >= 1; x--) {
+        fac1 = fac1 * x;
     }
+ 
+  for (int y=r; y >= 1; y--) {
+        fac2 = fac2 * y;
+    }
+  
+   for (int z=(n-r); z >= 1; z--) {
+        fac3 = fac3 * z;
+    }
+
+  NCR=fac1/(fac2*fac3);
+
+return NCR;
   
 
 }
